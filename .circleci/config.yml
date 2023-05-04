@@ -7,9 +7,9 @@ jobs:
       - image: "circleci/node:14"
     steps:
       - checkout
-      - node/install-packages:
-          cache-version: "1"
-          pkg-manager: "npm"
+      - run:
+          name: Install dependencies
+          command: npm install
       - run: npm run build
       - run: npm test
 workflows:
