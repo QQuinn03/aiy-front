@@ -5,8 +5,9 @@ orbs:
 
 jobs:
   build:
-    executor:
-      name: node/default
+  docker:
+      - image: 'circleci/node:14'
+
     steps:
       - checkout
       - node/install-packages:
