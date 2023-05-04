@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextEditor from "./TextEditor";
 import "./ReferenceLetter.css";
-import ReactQuill from "react-quill";
+//import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import "./LoadingSpinner.css";
 
@@ -64,7 +64,7 @@ const ReferenceLetter = () => {
     }
   };
 
-  const [textEditorContent, setTextEditorContent] = useState("");
+  //const [textEditorContent, setTextEditorContent] = useState("");
 
   return (
     <div className="reference-letter-container">

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import TextEditor from "./TextEditor";
 import "./ReferenceLetter.css";
-import ReactQuill from "react-quill";
+//import ReactQuill from 'react-quill';
 import "react-quill/dist/quill.snow.css";
 import "./LoadingSpinner.css";
 
@@ -18,7 +18,7 @@ const PersonalStatement = () => {
     workExperience: "",
     personalStory: "",
   });
-  const [essay, setEssay] = useState("");
+  //const [essay, setEssay] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
   const handleChange = (e) => {
     const { name, value } = e.target;
