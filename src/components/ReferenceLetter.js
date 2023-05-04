@@ -64,7 +64,7 @@ const ReferenceLetter = () => {
     }
   };
 
-  //const [textEditorContent, setTextEditorContent] = useState("");
+  // const [textEditorContent, setTextEditorContent] = useState(''); // Currently unused, but may be needed in the future
 
   return (
     <div className="reference-letter-container">
