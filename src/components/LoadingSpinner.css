@@ -1,0 +1,35 @@
+.loading-spinner {
+    display: inline-block;
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .loading-spinner:after {
+    content: " ";
+    display: block;
+    width: 70px;
+    height: 70px;
+    margin: 1px;
+    border-radius: 50%;
+    border: 7px solid #000;
+    border-color: rgb(121, 203, 202) transparent rgb(119, 161, 211) transparent;
+    animation: loading-spinner-animation 1.2s linear infinite;
+  }
+  .loading-spinner-text {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  @keyframes loading-spinner-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
