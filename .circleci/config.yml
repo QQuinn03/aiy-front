@@ -12,8 +12,25 @@ jobs:
           command: npm install
       - run: npm run build
       - run: npm test
+      - run: Install AWS CLI
+          command: |
+            sudo apt-get update && sudo apt-get install -y awscli
+      - run:
+        name: Deploy to S3
+        command: |
+            aws s3 sync ./build s3://my-078077974887-bucket --delete
+
 workflows:
   version: 2
   build-deploy:
-    jobs:
-      - build
+    develop_workflow:
+      when: << pipeline.git.branch == "develop" >>
+      jobs:
+        - build_and_test
+    master_workflow:
+      when: << pipeline.git.branch == "master" >>
+      jobs:
+        - build_and_test
+        - deploy_to_s3:
+            requires:
+              - build_and_test
