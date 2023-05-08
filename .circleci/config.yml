@@ -2,40 +2,46 @@ version: 2.1
 orbs:
   node: circleci/node@4.7.0
 jobs:
-  build_and_test:
+  build:
     docker:
-      - image: "circleci/node:14"
+      - image: "circleci/node:14-buster"
     steps:
       - checkout
       - run:
           name: Install dependencies
           command: npm install
       - run: npm run build
-      - run: npm test
-  deploy_to_s3:
-    docker:
-      - image: "circleci/node:14-buster"
-    steps:
-      - checkout
+      - run:
+          name: Run tests
+          command: npm test
       - run:
           name: Install AWS CLI
           command: |
-            echo "Current working directory: $(pwd)"
-            ls -la
             sudo apt-get update && sudo apt-get install -y awscli
-      - run:
-          name: Deploy to S3
-          command: |
-            aws s3 sync ./build s3://my-078077974887-bucket --delete
+      - persist_to_workspace:
+          root: ./
+          paths:
+            - build
 
 workflows:
   version: 2
   build-deploy:
     jobs:
-      - build_and_test
-      - deploy_to_s3:
-          requires:
-            - build_and_test
+      - build:
+          context: aiyContext
+          filters:
+            branches:
+              only: develop
+      - build:
+          name: build_and_deploy
+          context: aiyContext
           filters:
             branches:
               only: master
+          post-steps:
+            - run:
+                name: Deploy to S3
+                command: |
+                  echo "Current working directory: $(pwd)"
+                  ls -la
+                  aws s3 sync ./build s3://my-078077974887-bucket --delete
