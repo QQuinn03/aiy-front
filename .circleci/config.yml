@@ -38,7 +38,7 @@ workflows:
           filters:
             branches:
               only: develop
-      - build:
+      - build-deploy:
           name: build_and_deploy
           context: aiyContext
           filters:
