@@ -32,7 +32,8 @@ const ReferenceLetter = () => {
     // Handle form submission and communicate with the backend
     setLoading(true);
     console.log("Loading:", loading);
-    const apiUrl = "http://localhost:5000/rate-limited-letter";
+    const apiUrl =
+      "http://aiyv02.us-east-1.elasticbeanstalk.com/rate-limited-letter";
     try {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
