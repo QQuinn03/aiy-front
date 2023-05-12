@@ -34,11 +34,12 @@ const ReferenceLetter = () => {
     console.log("Loading:", loading);
     const apiUrl =
       "http://aiyv02.us-east-1.elasticbeanstalk.com/rate-limited-letter";
+    console.log("URL for fetch request:", apiUrl);
     try {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
         method: "POST",
-        credentials: "omit",
+
         headers: {
           "Content-Type": "application/json",
         },
@@ -48,6 +49,7 @@ const ReferenceLetter = () => {
       if (!response.ok) {
         if (response.status === 429) {
           setErrorMessage("Rate limit exceeded. Please try again later.");
+          q;
         } else {
           throw new Error("An error occurred while submitting the form.");
         }
