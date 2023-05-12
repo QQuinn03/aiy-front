@@ -39,6 +39,7 @@ const ReferenceLetter = () => {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
         method: "POST",
+        credentials: "omit",
         headers: {
           "Content-Type": "application/json",
         },
