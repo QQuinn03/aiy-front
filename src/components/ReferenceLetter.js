@@ -34,7 +34,6 @@ const ReferenceLetter = () => {
     console.log("Loading:", loading);
     const apiUrl =
       "http://aiyv02.us-east-1.elasticbeanstalk.com/rate-limited-letter";
-    console.log("URL for fetch request:", apiUrl);
     try {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
