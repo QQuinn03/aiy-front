@@ -39,7 +39,8 @@ const ReferenceLetter = () => {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
         method: "POST",
-
+        mode: "cors",
+        credentials: "include",
         headers: {
           "Content-Type": "application/json",
         },
