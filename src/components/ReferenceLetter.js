@@ -49,7 +49,6 @@ const ReferenceLetter = () => {
       if (!response.ok) {
         if (response.status === 429) {
           setErrorMessage("Rate limit exceeded. Please try again later.");
-          q;
         } else {
           throw new Error("An error occurred while submitting the form.");
         }
