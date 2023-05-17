@@ -44,4 +44,4 @@ workflows:
                 command: |
                   echo "Current working directory: $(pwd)"
                   ls -la
-                  aws s3 sync ./build s3://my-078077974887-bucket --delete
+                  aws s3 sync ./build s3://www.runwithaiy.com --delete

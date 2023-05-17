@@ -33,7 +33,7 @@ const PersonalStatement = () => {
     setLoading(true);
     // Handle form submission and communicate with the backend
     const apiUrl =
-      "http://aiyv1.eba-cmpw9rar.us-east-1.elasticbeanstalk.com/rate-limited-essay";
+      "http://AIY-dev.us-east-1.elasticbeanstalk.com/rate-limited-essay";
     try {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
