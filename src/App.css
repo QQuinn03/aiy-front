@@ -1,28 +1,46 @@
 body {
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   font-family: Arial, sans-serif;
 }
 
 .container {
   max-width: 800px;
-  margin: 0 auto;
-  background-color: white;
+  margin: 50px auto;
+  background-color: #FFFFFF;
   padding: 20px;
   border-radius: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.container:hover {
+  transform: scale(1.02);
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(109.6deg, #507EA8 11.2%, #87c0cd 91.1%);
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  color: #FFFFFF;
+}
+
+.logo {
+  height: 50px;   /* Adjust as needed */
+  margin-right: 10px;
 }
 
 h1 {
   font-size: 36px;
   font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #000000;
 }
 
 .paragraph-box {
   font-size: 20px;
-  background: linear-gradient(109.6deg, rgb(121, 203, 202) 11.2%, rgb(119, 161, 211) 91.1%);
+  background: linear-gradient(109.6deg, #507EA8 11.2%, #87c0cd 91.1%);
   padding: 20px;
   margin-top: 10%;
   margin-bottom: 20px;
@@ -30,6 +48,26 @@ h1 {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  color: #ffffff;
- 
+  color: #FFFFFF;
+  transition: transform 0.3s;
+}
+
+.paragraph-box:hover {
+  transform: scale(1.02);
+}
+
+.button {
+  margin-top: 20px;
+  background-color: #507EA8;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 2px solid #FFFFFF;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #87c0cd;
+  transition: background-color 0.3s;
 }
