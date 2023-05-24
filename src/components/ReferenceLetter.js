@@ -105,18 +105,20 @@ const ReferenceLetter = () => {
             </div>
 
             <div className="form-section">
-              <label htmlFor="gender">Your Gender</label>
-              <select
-                className="form-input"
-                id="gender"
-                name="gender"
-                value={formData.gender}
-                onChange={handleChange}
-              >
-                <option value="">Select gender</option>
-                <option value="she">She</option>
-                <option value="he">He</option>
-              </select>
+              <div className="gender-select">
+                <label htmlFor="gender">Your Gender</label>
+                <select
+                  className="form-input"
+                  id="gender"
+                  name="gender"
+                  value={formData.gender}
+                  onChange={handleChange}
+                >
+                  <option value="">Select gender</option>
+                  <option value="she">She</option>
+                  <option value="he">He</option>
+                </select>
+              </div>
             </div>
 
             <div className="form-section">
@@ -188,10 +190,17 @@ const ReferenceLetter = () => {
                 <div></div>
               </div>
             )}
-            <div className="form-section">
-              <input type="submit" value="Submit" disabled={loading} />
+            <div className="submit-btn">
+              <input
+                type="submit"
+                value="Submit your information"
+                disabled={loading}
+              />
             </div>
           </form>
+        </div>
+        <div class="response-text">
+          Response will be shown on the text editor
         </div>
         <div className="ql-container">
           <TextEditor

@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TextEditor from "./TextEditor";
-import "./ReferenceLetter.css";
-//import ReactQuill from 'react-quill';
+import "./Ps.css";
 import "react-quill/dist/quill.snow.css";
 import "./LoadingSpinner.css";
 
@@ -231,10 +230,17 @@ const PersonalStatement = () => {
                 <div></div>
               </div>
             )}
-            <div className="form-section">
-              <input type="submit" value="Submit" disabled={loading} />
+            <div className="submit-btn">
+              <input
+                type="submit"
+                value="Submit your information"
+                disabled={loading}
+              />
             </div>
           </form>
+        </div>
+        <div class="response-text">
+          Response will be shown on the text editor
         </div>
         <div className="ql-container">
           <TextEditor

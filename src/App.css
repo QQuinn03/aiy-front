@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  max-width: 800px;
+  max-width: 700px;
   margin: 50px auto;
   background-color: #FFFFFF;
   padding: 20px;
@@ -12,21 +12,32 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s;
 }
-
+.title {
+  color: rgb(76, 76, 76) !important;
+}
+.text-color{
+  color: rgb(76, 76, 76) !important;
+}
 .container:hover {
   transform: scale(1.02);
 }
+
 
 .title-container {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(109.6deg, #507EA8 11.2%, #87c0cd 91.1%);
+  background: white;
   padding: 10px;
   border-radius: 10px;
   margin-bottom: 20px;
   color: #FFFFFF;
+
+  max-width: 65%;  /* Set your desired maximum width here */
+  margin-left: auto;
+  margin-right: auto;
 }
+
 
 .logo {
   height: 50px;   /* Adjust as needed */
@@ -34,23 +45,27 @@ body {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 30px;
   font-weight: bold;
+
+  
 }
 
 .paragraph-box {
+  box-sizing: border-box;
   font-size: 20px;
-  background: linear-gradient(109.6deg, #507EA8 11.2%, #87c0cd 91.1%);
+  background: white;
   padding: 20px;
   margin-top: 10%;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   border-radius: 10px;
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  color: #FFFFFF;
   transition: transform 0.3s;
+  
 }
+
 
 .paragraph-box:hover {
   transform: scale(1.02);
@@ -70,4 +85,12 @@ h1 {
 .button:hover {
   background-color: #87c0cd;
   transition: background-color 0.3s;
+}
+@media only screen and (max-width: 600px) {
+  .paragraph-box {
+    padding: 10px;
+  }
+  .button{ 
+    display:none;
+  }
 }
