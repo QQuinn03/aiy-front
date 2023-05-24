@@ -1,0 +1,80 @@
+.personal-statement-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ps-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #000000;
+  }
+  .submit-btn {
+    width: 200px; /* Or any width you prefer */
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+  .ps-text-area {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 60px;
+    border-radius: 10px;
+    width: 100%;
+    color: #333333;
+    text-align: center;
+  }
+  
+  .ps-form-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .ps-form-section label {
+    width: 100%;
+    text-align: left;
+  }
+  
+  .ps-form-section input[type="text"], .ps-form-section textarea {
+    width: 100%;
+    padding: 8px;
+    font-size: 14px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .ps-submit-btn {
+    margin-top: 20px;  /* Adjust value as needed */
+    background-color: #507EA8;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+    transition: background-color 0.3s;
+  }
+  
+  .ps-submit-btn:hover {
+    background-color: #87c0cd;
+    transition: background-color 0.3s;
+  }
+  
+  @media (max-width: 768px) {
+    .personal-statement-container {
+      padding: 10px;
+    }
+  
+    .ps-title {
+      font-size: 28px;
+    }
+  }
+  

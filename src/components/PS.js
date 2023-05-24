@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import TextEditor from "./TextEditor";
-import "./ReferenceLetter.css";
-//import ReactQuill from 'react-quill';
+import "./Ps.css";
 import "react-quill/dist/quill.snow.css";
 import "./LoadingSpinner.css";
 
@@ -33,7 +32,7 @@ const PersonalStatement = () => {
     setLoading(true);
     // Handle form submission and communicate with the backend
     const apiUrl =
-      "http://aiyv02.us-east-1.elasticbeanstalk.com/rate-limited-essay";
+      "http://AIY-dev.us-east-1.elasticbeanstalk.com/rate-limited-essay";
     try {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
@@ -231,10 +230,17 @@ const PersonalStatement = () => {
                 <div></div>
               </div>
             )}
-            <div className="form-section">
-              <input type="submit" value="Submit" disabled={loading} />
+            <div className="submit-btn">
+              <input
+                type="submit"
+                value="Submit your information"
+                disabled={loading}
+              />
             </div>
           </form>
+        </div>
+        <div class="response-text">
+          Response will be shown on the text editor
         </div>
         <div className="ql-container">
           <TextEditor

@@ -1,7 +1,10 @@
 .reference-letter-container {
   max-width: 800px;
   margin: 0 auto;
-  padding: 40px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .title {
@@ -11,170 +14,83 @@
   text-align: center;
   color: #000000;
 }
-
+.gender-select {
+  width: 50%; /* Or any width you prefer */
+  /* margin-left: auto;
+  margin-right: auto; */
+  max-width: 130px;
+}
 .paragraph-box {
   background-color: #f0f0f0;
   padding: 20px;
-  margin-top: 0%;
   margin-bottom: 60px;
   border-radius: 10px;
-  width: 70%;
-  margin-left: center;
-  margin-right: center;
-  color: white;
+  width: 100%;
+  color: #333333;
   text-align: center;
 }
 
-.form-container {
-  margin-bottom: 20px;
-}
-
-.text-editor-container {
-  margin-bottom: 10px;
-}
-
-.text-editor {
-  width: 150%;
-  min-height: 400px;
-  padding: 0 !important;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  resize: vertical;
-}
-
-.form-section {
-  margin-bottom: 20px;
-}
-
-.form-section label {
-  display: inline-block;
-  width: 250px;
-  text-align: left;
-  margin-left: -100px;
-}
-
-.form-section input[type="text"] {
-  width: 200px;
-  margin-left:-90px;
-  display: block;
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.form-section textarea {
-  /* Add your common styles for input, select, and textarea elements here */
-  display: block;
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-.form-section select {
-  /* Add your common styles for input and select elements here */
-  display: block;
-  margin-left:-100px;
-  width: 100%;
-  padding: 8px;
-  font-size: 14px;
-  margin-top: 5px;
-  margin-bottom: 15px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-
 .form-text-editor-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
 }
 
 .form-container-wrapper {
   display: flex;
   flex-direction: column;
-  width: 33%;
+  width: 100%;
   padding-right: 20px;
 }
 
-.reference-letter-content {
+.form-section {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-.ql-container {
-  
+  flex-direction: column;
   width: 100%;
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  width: 100%;
+  text-align: left;
+}
+
+.form-section input[type="text"], .form-section textarea, .form-section select {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.ql-container {
+  width: 100%;
+
 }
 
 .ql-editor {
-  min-height: 500px; /* Increase the height here */
+  min-height: 600px; /* Increase the height here */
+   
 }
-
-@media (max-width: 768px) {
-  .form-container,
-  .text-editor-container {
-    width: 100%;
-  }
-
-  .form-section label {
-    margin-left: 0;
-  }
-}
-
-/* .required {
-  color: rgb(126, 16, 16);
-  margin-left: 2px;
-} */
-
-.required {
-  color: #7e1010;
-  margin-left: 2px;
-}
-.personal-statement-container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.title {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #000000;
-}
-
-.paragraph-box {
-  background-color: #f0f0f0;
-  padding: 20px;
-  margin-top: 0%;
-  margin-bottom: 60px;
-  border-radius: 10px;
-  width: 70%;
+.submit-btn {
+  width: 200px; /* Or any width you prefer */
   margin-left: auto;
   margin-right: auto;
-  color: #333333;
-  text-align: center;
+  margin-bottom: 40px;
 }
+@media (max-width: 768px) {
+  .reference-letter-container {
+    padding: 10px;
+  }
 
-.form-section input[type="text"] {
-  width: 200px;
-  margin-left: -100px;
+  .title {
+    font-size: 28px;
+  }
 }
-
-.form-section textarea {
-  width: 400px;
-  min-height: 200px;
-  margin-left: -100px;
+.response-text {
+  font-weight: bold;
+  margin-bottom: 30PX;;
 }
-
-
