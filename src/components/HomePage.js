@@ -14,11 +14,13 @@ const HomePage = () => {
 
         <div className="paragraph-box">
           <p className="text-color">
-            Are you applying to college? Don't let the challenge of writing
-            deter your plans. With GPT4-powered technology, you can create
-            personalized writing effectively. We offer help in articulating your
-            thoughts and experiences, enabling you to create genuine and
-            compelling university applications!
+            Chasing your dream university in an English-speaking country?
+            Nervous about applications and tests? We've got you covered! Our
+            cutting-edge platform, powered by advanced GPT4 technology, is your
+            secret weapon for creating top-notch applications. It not only aids
+            in preparing compelling applications but also helps ace those
+            English tests. Together, let's showcase your potential and make your
+            dream a reality!
           </p>
         </div>
       </div>
