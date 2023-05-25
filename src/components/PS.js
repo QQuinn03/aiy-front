@@ -176,7 +176,7 @@ const PersonalStatement = () => {
                 name="whyInterested"
                 value={formData.whyInterested}
                 required
-                placeholder="E.g., shcool reputation, course curriculum, a professor you admire works here"
+                placeholder="E.g., school reputation, course curriculum, a professor you admire works here"
                 onChange={handleChange}
                 rows={5}
               />
