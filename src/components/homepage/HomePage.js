@@ -1,8 +1,8 @@
 import React from "react";
 
-import Service from "./Service";
-import Footer from "./Footer";
-import "../App.css";
+import Service from "../service/Service";
+import Footer from "../../containers/footer/Footer";
+import "../../App.css";
 
 const HomePage = () => {
   return (

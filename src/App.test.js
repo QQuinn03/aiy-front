@@ -3,7 +3,7 @@ import { render, screen } from "@testing-library/react";
 import { MemoryRouter } from "react-router-dom";
 import App from "./App";
 
-import ReferenceLetter from "./components/ReferenceLetter";
+import ReferenceLetter from "./components/referenceLetter/ReferenceLetter";
 test("renders HomePage component at the default route", () => {
   render(<App />);
   expect(screen.getByText(/Welcome to Run with AIY/i)).toBeInTheDocument();

@@ -1,0 +1,96 @@
+body {
+    background-color: #FFFFFF;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    max-width: 700px;
+    margin: 50px auto;
+    background-color: #FFFFFF;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  .title {
+    color: rgb(76, 76, 76) !important;
+  }
+  .text-color{
+    color: rgb(76, 76, 76) !important;
+  }
+  .container:hover {
+    transform: scale(1.02);
+  }
+  
+  
+  .title-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+  
+    max-width: 65%;  /* Set your desired maximum width here */
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  
+  .logo {
+    height: 50px;   /* Adjust as needed */
+    margin-right: 10px;
+  }
+  
+  h1 {
+    font-size: 30px;
+    font-weight: bold;
+  
+    
+  }
+  
+  .paragraph-box {
+    box-sizing: border-box;
+    font-size: 20px;
+    background: white;
+    padding: 20px;
+    margin-top: 10%;
+    margin-bottom: 40px;
+    border-radius: 10px;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.3s;
+    
+  }
+  
+  
+  .paragraph-box:hover {
+    transform: scale(1.02);
+  }
+  
+  .button {
+    margin-top: 20px;
+    background-color: #507EA8;
+    color: #FFFFFF;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: 2px solid #FFFFFF;
+    transition: background-color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #87c0cd;
+    transition: background-color 0.3s;
+  }
+  @media only screen and (max-width: 600px) {
+    .paragraph-box {
+      padding: 10px;
+    }
+    .button{ 
+      display:none;
+    }
+  }

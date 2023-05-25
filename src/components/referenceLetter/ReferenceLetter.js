@@ -1,9 +1,9 @@
 import React, { useState } from "react";
-import TextEditor from "./TextEditor";
+import TextEditor from "../textEditor/TextEditor";
 import "./ReferenceLetter.css";
 //import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
-import "./LoadingSpinner.css";
+import "../LoadingSpinner.css";
 
 const ReferenceLetter = () => {
   const [formData, setFormData] = useState({
