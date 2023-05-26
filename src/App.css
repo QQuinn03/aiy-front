@@ -1,4 +1,4 @@
-body {
+ /* body {
   background-color: #FFFFFF;
   font-family: Arial, sans-serif;
 }
@@ -33,14 +33,14 @@ body {
   margin-bottom: 20px;
   color: #FFFFFF;
 
-  max-width: 65%;  /* Set your desired maximum width here */
+  max-width: 65%; 
   margin-left: auto;
   margin-right: auto;
 }
 
 
-.logo {
-  height: 50px;   /* Adjust as needed */
+ .logo {
+  height: 50px;   
   margin-right: 10px;
 }
 
@@ -93,4 +93,4 @@ h1 {
   .button{ 
     display:none;
   }
-}
+} */
