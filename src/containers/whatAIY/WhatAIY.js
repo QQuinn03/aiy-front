@@ -1,5 +1,5 @@
 import React from "react";
-import "./WhatAIY.css";
+import "./whatAIY.css";
 
 const WhatAIY = () => {
   return <div>WhatAIY</div>;

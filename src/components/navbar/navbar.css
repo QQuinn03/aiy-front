@@ -1,0 +1,135 @@
+.aiy_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+}
+.aiy_navbar-links{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aiy_navbar-links_logo{
+    margin-right: 2rem;
+}
+
+.aiy_navbar-links_logo img{
+   width: 120px;
+   height: 72px;
+}
+
+.aiy_navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+
+.aiy_navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aiy_navbar-links_container p,
+.aiy_navbar-sign p,
+.aiy_navbar-menu_container p {
+    color:#507EA8;
+    font-weight:500;
+    font-size:18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    font-family: Manrope;
+    font-style: normal;
+
+    margin: 0 1rem;
+   
+    cursor: pointer;
+}
+.aiy_navbar-sign button,
+.aiy_navbar-menu_container button{
+    padding:0.5rem 1rem;
+    color:#f8f8f8;
+    left:1153px;
+    top:55px;
+    background: #507EA8;
+    
+    border-radius: 5px;
+    font-family: Manrope;
+    font-weight:500;
+    outline:none;
+    font-size:18px;
+    line-height: 25px;
+    border:0;
+   
+    cursor:pointer;
+}
+
+.aiy_navbar-menu {
+    margin-left:1 rem;
+    display: none;
+    position: relative;
+}
+
+.aiy_navbar-menu svg {
+    cursor:pointer;
+}
+
+.aiy_navbar-menu-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: #507EA8;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.aiy_navbar-menu_container p {
+    margin: 1rem 0;
+}
+.aiy_navbar-menu_container-links-sign {
+    display: none;
+}
+@media screen and (max-width: 1050px) {
+    .aiy_navbar-links_container {
+        display: none;
+    }
+
+    .aiy_navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aiy_navbar {
+        padding: 2rem 4rem;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aiy_avbar {
+        padding: 2rem;
+    }
+
+    .aiy_navbar-sign {
+        display: none;
+    }
+
+    .aiy_navbar-menu_container {
+        top: 10px;
+    }
+
+    .aiy_navbar-menu_container-links-sign {
+        display: block;
+    }
+}

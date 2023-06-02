@@ -1,29 +1,51 @@
 import React from "react";
 import "./App.css";
+import "./index.css";
 import {
   BrowserRouter as Router,
   MemoryRouter,
   Routes,
   Route,
 } from "react-router-dom";
-import { ReferenceLetter, PersonalStatement, HomePage } from "./components";
+import {
+  ReferenceLetter,
+  PersonalStatement,
+  HomePage,
+  Navbar,
+} from "./components";
+import { Features, Footer, Header, WhatAIY } from "./containers";
 
-function App({ testInitialEntries }) {
-  const RouterComponent = testInitialEntries ? MemoryRouter : Router;
-  const routerProps = testInitialEntries
-    ? { initialEntries: testInitialEntries }
-    : {};
+// function App({ testInitialEntries }) {
+//   const RouterComponent = testInitialEntries ? MemoryRouter : Router;
+//   const routerProps = testInitialEntries
+//     ? { initialEntries: testInitialEntries }
+//     : {};
 
+//   return (
+//     <RouterComponent {...routerProps}>
+//       <Routes>
+//         <Route path="/" element={<HomePage />} />
+//         <Route path="/reference-letter" element={<ReferenceLetter />} />
+//         <Route path="/personal-statement" element={<PersonalStatement />} />
+
+//         {/* Add other routes if necessary */}
+//       </Routes>
+//     </RouterComponent>
+//   );
+// }
+// export default App;
+const App = () => {
   return (
-    <RouterComponent {...routerProps}>
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/reference-letter" element={<ReferenceLetter />} />
-        <Route path="/personal-statement" element={<PersonalStatement />} />
+    <div className="App">
+      <div className="gradient_bg">
+        <Navbar />
+        <Header />
+      </div>
 
-        {/* Add other routes if necessary */}
-      </Routes>
-    </RouterComponent>
+      <WhatAIY />
+      <Features />
+      <Footer />
+    </div>
   );
-}
+};
 export default App;
