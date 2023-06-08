@@ -1,0 +1,199 @@
+.aiy_navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 6rem;
+    position: fixed;  /* Add this line */
+    width: 100%;      /* And this line */
+    z-index: 100;     /* This line ensures the navbar stays above all other content */
+  
+    margin-bottom: 30px;
+}
+.aiy_navbar-links{
+    flex:1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.aiy_navbar-links_logo{
+    margin-right: 2rem;
+}
+
+.aiy_navbar-links_logo img{
+   width: 90px;
+   height: 50px;
+}
+
+.aiy_navbar-links_container {
+    display: flex;
+    flex-direction: row;
+}
+.aiy_navbar a {
+   
+    display: block;
+
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    color: #507EA8; /* Same as the color used in previous code */
+    font-family: Manrope; /* Same as the font-family used in previous code */
+    font-size: 18px; 
+  }
+  
+  /* Change background on mouse-over */
+  .aiy_navbar a:hover {
+    background: #86aedf; /* Lighter shade of your theme color */
+    color: #f8f8f8;
+    border:none;
+
+  }
+.grident-bg
+   
+{
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 50% 50%, rgba(248, 252, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 50% 50%, rgba(248, 252, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 50% 50%, rgba(248, 252, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 50% 50%, rgba(248, 252, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 50% 50%, rgba(248, 252, 255, 1) 0%, rgba(230, 230, 230, 1) 100%);
+
+}
+
+
+.aiy_navbar-sign{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.aiy_navbar-links_container p,
+.aiy_navbar-sign p,
+.aiy_navbar-menu_container p {
+    color:#507EA8;
+    font-weight:500;
+    font-size:18px;
+    line-height: 25px;
+    text-transform: capitalize;
+
+    font-family: Manrope;
+    font-style: normal;
+
+    margin: 0 1rem;
+   
+    cursor: pointer;
+}
+.aiy_navbar-sign button,
+.aiy_navbar-menu_container button{
+    padding:0.5rem 1rem;
+    color:#f8f8f8;
+    left:1153px;
+    top:55px;
+    background: #507EA8;
+    
+    border-radius: 5px;
+    font-family: Manrope;
+    font-weight:500;
+    outline:none;
+    font-size:18px;
+    line-height: 25px;
+    border:0;
+   
+    cursor:pointer;
+}
+
+.aiy_navbar-menu {
+    margin-left:1 rem;
+    display: none;
+    position: relative;
+}
+
+.aiy_navbar-menu svg {
+    cursor:pointer;
+}
+
+.aiy_navbar-menu-container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column;
+    
+    text-align: end;
+    background: #507EA8;
+    padding: 2rem;
+    position: absolute;
+    right: 0;
+    top: 40px;
+    margin-top: 1rem;
+    min-width: 210px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0, 0,0.2);
+}
+
+.aiy_navbar-menu_container p {
+    margin: 1rem 0;
+}
+.aiy_navbar-menu_container-links-sign {
+    display: none;
+}
+@media screen and (max-width: 1050px) {
+    .aiy_navbar-links_container {
+        display: none;
+    }
+
+    .aiy_navbar-menu {
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .aiy_header-content {
+        margin-top: 100px;
+        margin-right: 2rem;
+        padding: 20px; 
+    }
+
+    .aiy_header-content h1 {
+        font-size: 40px;
+        line-height: 35px;
+    }
+
+    .aiy_header-content p {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 400px;
+    }
+
+    .aiy_header-image {
+        width: 60px;  /* adjust as necessary */
+        height: 60px; /* adjust as necessary */
+        min-width: 60px; /* adjust as necessary */
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .aiy_navbar {
+        padding: 2rem;
+    }
+
+    .aiy_navbar-sign {
+        display: none;
+    }
+
+    .aiy_navbar-menu_container {
+        top: 10px;
+    }
+
+    .aiy_navbar-menu_container-links-sign {
+        display: block;
+    }
+}

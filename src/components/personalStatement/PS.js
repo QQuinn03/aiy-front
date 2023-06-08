@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import TextEditor from "./TextEditor";
+import TextEditor from "../textEditor/TextEditor";
 import "./Ps.css";
 import "react-quill/dist/quill.snow.css";
-import "./LoadingSpinner.css";
+import "../LoadingSpinner.css";
 
 const PersonalStatement = () => {
   const [formData, setFormData] = useState({

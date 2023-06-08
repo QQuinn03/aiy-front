@@ -1,0 +1,119 @@
+.aiy_header{
+    display:flex;
+    flex-direction: row;
+   
+    align-items: center;
+    
+}
+.aiy_header-content{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+ 
+    flex-direction:column;
+    margin-top: 150px;
+    margin-right: 5rem;
+    align-items: center;
+   
+    margin-top:130px;
+    font-family: Manrope;
+}
+
+.aiy_header-content p { 
+    font-family: Manrope;
+    font-style:normal;
+    font-weight:normal;
+    font-size:20px;
+    line-height:27px;
+    
+ 
+    color: black;
+    margin-top:1.5rem;
+    max-width: 600px;
+    
+}
+.aiy_header-title_and_image {
+    display: flex;
+    align-items: center; /* align items vertically */
+    justify-content: space-between; /* create some space between h1 and image */
+    margin-bottom: 1rem; /* adjust this to create some space between this div and the following p tag */
+    font-family: Manrope;
+}
+.aiy_header-content h1 {
+    background: -webkit-linear-gradient(#507EA8, #708DBA, #A1B8D0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 40px;
+    line-height: 35px;
+    align-items: center;
+    font-family: Manrope;
+}
+.aiy_header-image {
+    width: 100px; /* adjust as necessary */
+    height: auto; /* adjust as necessary */
+    object-fit: cover; /* to maintain aspect ratio */
+    border-radius: 80%; /* to ensure it remains circular */
+    margin-left: 50px;
+    transition: transform 0.3s ease-in-out;
+
+  }
+  .aiy_header-image:hover {
+    transform: rotate(360deg); /* This will rotate the image 360 degrees when hovered */
+}
+
+@media screen and (max-width: 1050px) {
+    .aiy_header-content h1 {
+        font-size: 50px;
+        line-height: 45px;
+    }
+
+    .aiy_header-content p {
+        font-size: 18px;
+        line-height: 35px;
+        max-width: 500px;
+    }
+}
+
+  
+@media screen and (max-width: 700px) {
+    .aiy_header-content {
+        margin-top: 100px;
+        margin-right: 2rem;
+        padding: 20px; 
+    }
+
+    
+  
+    .aiy_header-content p {
+        font-size: 16px;
+        line-height: 30px;
+        max-width: 400px;
+    }
+    .aiy_header-image {
+    width: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 550px) {
+    .aiy_header-content {
+        margin-top: 80px;
+        margin-right: 1rem;
+    }
+
+    .aiy_header-content h1 {
+        font-size: 30px;
+        line-height: 25px;
+        
+    }
+
+    .aiy_header-content p {
+        font-size: 14px;
+        line-height: 25px;
+        max-width: 300px;
+    }
+    .aiy_header-image {
+        width: 50%;
+        max-width: 50%;
+      }
+}
