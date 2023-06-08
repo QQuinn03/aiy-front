@@ -1,18 +1,8 @@
 import React from "react";
 import "./App.css";
 import "./index.css";
-import {
-  BrowserRouter as Router,
-  MemoryRouter,
-  Routes,
-  Route,
-} from "react-router-dom";
-import {
-  ReferenceLetter,
-  PersonalStatement,
-  HomePage,
-  Navbar,
-} from "./components";
+
+import { Navbar } from "./components";
 import { Features, Footer, Header, WhatAIY } from "./containers";
 
 // function App({ testInitialEntries }) {

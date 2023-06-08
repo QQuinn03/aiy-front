@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../../assets/aiy-logo.png";
+
 import "./footer.css";
 
 const Footer = () => (
@@ -29,7 +29,3 @@ const Footer = () => (
 );
 
 export default Footer;
-
-{
-  /* <p>© {new Date().getFullYear()} Run with AIY. All Rights Reserved.</p> */
-}
