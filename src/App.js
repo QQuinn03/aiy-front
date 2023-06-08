@@ -37,10 +37,10 @@ import { Features, Footer, Header, WhatAIY } from "./containers";
 const App = () => {
   return (
     <div className="App">
-      <div className="gradient_bg">
+      <div>
         <Navbar />
-        <Header />
       </div>
+      <Header />
 
       <WhatAIY />
       <Features />

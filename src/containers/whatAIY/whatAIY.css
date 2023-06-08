@@ -1,0 +1,135 @@
+
+
+.aiy__whataiy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+ 
+    /* margin-left: 50px;
+    margin-right:50px; */
+  
+
+    /* background: var(--color-footer); */
+
+    /* ff 3.6+ */
+    background:-moz-radial-gradient(circle at 55% 45%, rgb(197, 219, 237) 0%, #507EA8 100%);
+
+    /* safari 5.1+,chrome 10+ */
+    background:-webkit-radial-gradient(circle at 55% 45%,rgb(197, 219, 237) 0%, #507EA8 100%);
+
+    /* opera 11.10+ */
+    background:-o-radial-gradient(circle at 55% 45%, rgb(197, 219, 237) 0%, #507EA8 100%);
+
+    /* ie 10+ */
+    background:-ms-radial-gradient(circle at 55% 45%, rgb(197, 219, 237) 0%, #507EA8 100%);
+
+    /* global 92%+ browsers support */
+    background:radial-gradient(circle at 55% 45%, rgb(197, 219, 237) 0%, #507EA8 100%);
+
+    filter: drop-shadow(0px 10px 10px rgba(124, 171, 237, 0.8));
+}
+
+
+
+
+.aiy__whataiy-feature {
+    display: flex;
+}
+
+/* Customizing feature component as per needs */
+.aiy__whataiy-feature .aiy__features-container__feature {
+    margin: 0;
+}
+
+/* Customizing feature component as per needs */
+.aiy__aiy-feature .aiy__features-container_feature-text {
+    max-width: 700px;
+}
+
+.aiy__aiy-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+    margin: 4rem 0 2rem;
+}
+
+.aiy__whataiy-heading h1 {
+    font-size: 34px;
+    line-height: 45px;
+    font-weight: 800;
+    font-family: Manrope;
+    max-width: 510px;
+}
+
+.aiy__whataiy-heading p {
+    font-family: Manrope;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 30px;
+    color: #a03779;
+    cursor: pointer;
+}
+
+.aiy__whataiy-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+    margin-top: 2rem;
+}
+
+/* Customizing feature component as per needs */
+.aiy__whataiy-container .aiy__features-container__feature {
+    flex: 1;
+    margin: 1rem;
+    min-width: 210px;
+    display: unset;
+    flex-direction: column;
+}
+
+/* Customizing feature component as per needs */
+.aiy__whataiy-container .aiy__features-container_feature-text {
+    margin-top: 0.5rem;
+}
+
+@media screen and (max-width: 850px) {
+    .aiy__whataiy-heading {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 0rem;
+    }
+
+ 
+}
+
+@media screen and (max-width: 650px) {
+    /* Customizing feature component as per needs */
+    .aiy__whataiy-feature .aiy__features-container__feature {
+        flex-direction: column;
+    }
+   
+    /* Customizing feature component as per needs */
+    .aiy__whataiy-feature .aiy__features-container_feature-text {
+        margin-top: 0.5rem;
+    }
+
+    .aiy__whataiy-heading h1 {
+        font-size: 28px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    /* Customizing feature component as per needs */
+    .aiy__whataiy {
+        min-width: auto;
+    }
+    .aiy__whataiy-container .aiy__features-container__feature {
+        margin: 1rem 0;
+        min-width: 100%;
+    }
+   
+}

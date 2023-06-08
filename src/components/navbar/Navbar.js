@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import "./navbar.css";
+
 import { RiMenu3Line, RiCloseLine } from "react-icons/ri";
-import logo from "../../assets/logo-no-background.png";
+import logo from "../../assets/aiy-logo.png";
 
 const Menu = () => (
   <>
@@ -9,7 +10,7 @@ const Menu = () => (
       <a href="#home"> Home</a>
     </p>
     <p>
-      <a href="#aiy"> What is AIY</a>
+      <a href="#aiy"> About AIY</a>
     </p>
     <p>
       <a href="#Service"> Services</a>
@@ -24,7 +25,7 @@ const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
 
   return (
-    <div className="aiy_navbar">
+    <div className="aiy_navbar grident-bg">
       <div className="aiy_navbar-links">
         <div className="aiy_navbar-links_logo">
           <img src={logo} alt="logo" />
