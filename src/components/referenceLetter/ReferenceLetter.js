@@ -33,7 +33,7 @@ const ReferenceLetter = () => {
     setLoading(true);
     console.log("Loading:", loading);
     const apiUrl =
-      "http://AIY-dev.us-east-1.elasticbeanstalk.com/rate-limited-letter";
+      "http:///aiy-dev2.us-east-1.elasticbeanstalk.com/rate-limited-letter";
     console.log("URL for fetch request:", apiUrl);
     try {
       console.log("Form data:", formData);

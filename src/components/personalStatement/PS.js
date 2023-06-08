@@ -32,7 +32,7 @@ const PersonalStatement = () => {
     setLoading(true);
     // Handle form submission and communicate with the backend
     const apiUrl =
-      "http://AIY-dev.us-east-1.elasticbeanstalk.com/rate-limited-essay";
+      "http:///aiy-dev2.us-east-1.elasticbeanstalk.com/rate-limited-essay";
     try {
       console.log("Form data:", formData);
       const response = await fetch(apiUrl, {
@@ -176,7 +176,7 @@ const PersonalStatement = () => {
                 name="whyInterested"
                 value={formData.whyInterested}
                 required
-                placeholder="E.g., shcool reputation, course curriculum, a professor you admire works here"
+                placeholder="E.g., school reputation, course curriculum, a professor you admire works here"
                 onChange={handleChange}
                 rows={5}
               />

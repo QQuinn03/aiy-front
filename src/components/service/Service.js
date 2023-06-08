@@ -49,19 +49,19 @@ const Service = () => {
       <div className="service-item">
         <button className="service-btn" onClick={handleUniquePromptClick}>
           <FaLightbulb className="service-icon" />
-          Your Unique Prompt
+          Service X
         </button>
         <p className="service-description">
-          Description for Your Unique Prompt service...
+          Other GPT4 powered services coming soon...
         </p>
       </div>
       <div className="service-item">
         <button className="service-btn" onClick={handleUniquePromptClick}>
           <FaLightbulb className="service-icon" />
-          Your Unique Prompt
+          Service Y
         </button>
         <p className="service-description">
-          Description for Your Unique Prompt service...
+          Other GPT4 powered services coming soon...
         </p>
       </div>
     </div>
